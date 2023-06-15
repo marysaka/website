@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<hr>
+<dl>
+<!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
+  {% for page in section.pages %}
+  <dt class="post-entry"><a href="{{ page.permalink | safe }}" class="title">{{ page.title }}</a><p class="post-date">{{ page.date | date(format="%d %b %Y") }}</p></dt>
+  <dd>{{ page.content | truncate(length=260) | safe  }}</dt>
+  {% endfor %}
+</dl>
+{% endblock content %}
+{% block footer %}
+<hr>
+<footer>
+  <p><a href="{{ get_url(path='/') }}">Back to home</a></p>
+</footer>
+{% endblock content %}

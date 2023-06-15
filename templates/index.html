@@ -1,19 +1,15 @@
 {% extends "base.html" %}
-
+{% block header_title %} Hi, I'm Mary! {% endblock %}
 {% block content %}
-<header>
-  <h1 class="title">
-    Hi, I'm Mary!
-  </h1>
-</header>
 <p>I'm a software engineer from France that loves tea.</p>
 <p>I contribute to various projects that you can see on <a href="https://github.com/marysaka">my GitHub profile</a>.</p>
+<p> I also have a <a href="{{ get_url(path='@/blog/_index.md') }}">blog</a>.</p>
 <hr>
-<h2>Some links:</h2>
+<h2>Where to find me:</h2>
 <ul class="nostyle">
-  <li>GitHub: <a href="https://github.com/marysaka">marysaka</a></li>
   <li>Twitter: <a href="https://twitter.com/marysaka_">@marysaka_</a></li>
   <li>Fediverse: <a href="https://outerheaven.club/mary">@mary@outerheaven.club</a></li>
+  <li>GitHub: <a href="https://github.com/marysaka">marysaka</a></li>
   <li>Bluesky: @mary.zone</li>
   <li>Email: contact [at] mary.zone</li>
 </ul>

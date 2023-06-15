@@ -1,7 +1,9 @@
-{% if page %}
-{% set title = config.title ~ " - " ~ page.title %}
+{% if page.title %}
+{% set title = config.extra.subpage_title ~ " - " ~ page.title %}
+{% elif section.title %}
+{% set title = config.extra.subpage_title ~ " - " ~ section.title %}
 {% else %}
-{% set title = config.title %}
+{% set title = config.extra.main_title %}
 {% endif %}
 
 <!DOCTYPE html>
@@ -10,16 +12,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ config.description }}">
+  <link rel="alternate" type="application/rss+xml" title="Mary's blog" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
   <meta property="og:title" content="{{ title }}"/>
+  <meta property="og:site_name" content="{{ config.title }}"/>
+  <meta property="og:description" content="{{ config.description }}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="{{ config.base_url }}"/>
+  <meta property="og:locale" content="en_US"/>
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:site" content="@{{ config.extra.twitter_handle }}"/>
   <meta property="twitter:creator" content="@{{ config.extra.twitter_handle }}"/>
-  <title>{{ title }}</title>
+  <meta property="twitter:title" content="{{ title }}"/>
+  <meta property="twitter:description" content="{{ config.description }}"/>
   <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+  <link href="data:," rel="icon">
 </head>
 
 <body>
+  <header>
+    <h1 class="title">
+      {% block header_title %}
+        {% if page.title %}
+          {{ page.title }}
+        {% else %}
+          {{ title }}
+        {% endif %}
+      {% endblock %}
+    </h1>
+
+    {% if page.date %}
+      <p class="post-date">{{ page.date | date(format="%d %b %Y") }}</p>
+    {% endif %}
+
+  </header>
+
   {% block content %} {% endblock %}
+  {% block footer %} {% endblock %}
 </body>
 
 </html>

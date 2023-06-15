@@ -1,7 +1,11 @@
 title = "mary.zone"
+description = "Software, hacking, tea and gay"
 base_url = "https://mary.zone/"
-compile_sass = true
+author = "marysaka"
+compile_sass = false
 build_search_index = true
+generate_feed = true
+feed_filename = "rss.xml"
 
 [markdown]
 # Whether to do syntax highlighting
@@ -11,3 +15,5 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 twitter_handle = "marysaka_"
+main_title = "Mary (marysaka)"
+subpage_title = "Mary"

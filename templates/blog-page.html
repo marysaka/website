@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<article>
+  {{ page.content | safe }}
+</article>
+{% endblock content %}
+{% block footer %}
+<hr>
+<footer>
+  <p><a href="{{ get_url(path='@/blog/_index.md') }}">Back to the blog</a></p>
+</footer>
+{% endblock content %}

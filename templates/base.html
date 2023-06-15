@@ -1,0 +1,25 @@
+{% if page %}
+{% set title = config.title ~ " - " ~ page.title %}
+{% else %}
+{% set title = config.title %}
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <meta property="og:title" content="{{ title }}"/>
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:site" content="@{{ config.extra.twitter_handle }}"/>
+  <meta property="twitter:creator" content="@{{ config.extra.twitter_handle }}"/>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+</head>
+
+<body>
+  {% block content %} {% endblock %}
+</body>
+
+</html>

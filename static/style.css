@@ -1,0 +1,35 @@
+body {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 120%;
+  margin: 0px auto;
+  padding: 0em 1em 1em 1em;
+  line-height: 1.6;
+  max-width:40em;
+}
+
+header {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.title {
+  text-decoration:underline;
+  font-weight:bold;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.nostyle {
+  list-style: none;
+}

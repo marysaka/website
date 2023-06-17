@@ -1,9 +1,11 @@
-{% if page.title %}
+{% if section.extra.force_main_title %}
+{% set title = section.title %}
+{% elif page.extra.force_main_title %}
+{% set title = page.title %}
+{% elif page.title %}
 {% set title = config.extra.subpage_title ~ " - " ~ page.title %}
 {% elif section.title %}
 {% set title = config.extra.subpage_title ~ " - " ~ section.title %}
-{% else %}
-{% set title = config.extra.main_title %}
 {% endif %}
 
 <!DOCTYPE html>
@@ -34,7 +36,11 @@
   <header>
     <h1 class="title">
       {% block header_title %}
-        {% if page.title %}
+        {% if section.extra.header_title %}
+          {{ section.extra.header_title }}
+        {% elif page.extra.header_title %}
+          {{ page.extra.header_title }}
+        {% elif page.title %}
           {{ page.title }}
         {% else %}
           {{ title }}
@@ -49,7 +55,9 @@
   </header>
 
   {% block content %} {% endblock %}
+  {% if not section.extra.disable_footer or page.extra.disable_footer %}
   {% block footer %} {% endblock %}
+  {% endif %}
 </body>
 
 </html>

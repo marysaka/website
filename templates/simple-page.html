@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+{% if section.content %}
+{{ section.content | safe }}
+{% elif page.content %}
+{{ page.content | safe }}
+{% endif %}
+{% endblock content %}
+{% block footer %}
+<hr>
+<footer>
+  <p><a href="{{ get_url(path='/') }}">Back to home</a></p>
+</footer>
+{% endblock content %}

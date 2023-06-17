@@ -4,7 +4,7 @@ body {
   margin: 0px auto;
   padding: 0em 1em 1em 1em;
   line-height: 1.6;
-  max-width:40em;
+  max-width: 40em;
 }
 
 header {
@@ -20,14 +20,8 @@ a {
 }
 
 a.title {
-  text-decoration:underline;
-  font-weight:bold;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 dt.post-entry {
@@ -44,4 +38,8 @@ dt.post-entry {
 
 ul.nostyle {
   list-style: none;
+}
+
+td.friend-name {
+  padding-right: 1em;
 }

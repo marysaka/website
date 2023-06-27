@@ -24,12 +24,16 @@ Hey! You should totally check out those awesome friends!
       <td>An awesome dragon with incredible knowledge and awesome taste 🐉</td>
     </tr>
     <tr>
-      <td class="friend-name"><a href="https://github.com/SludgeGirl">Sludge</a></td>
+      <td class="friend-name"><a href="https://sludge.network">Sludge</a></td>
       <td>A smart (but also awesome) vampire developer with great taste 🍷</td>
     </tr>
     <tr>
       <td class="friend-name"><a href="https://mary.rs">merry</a></td>
       <td>Another Mary that is a very talented wizard 💊</td>
+    </tr>
+    <tr>
+      <td class="friend-name"><a href="https://annsann.eu">Anna</a></td>
+      <td>A talented developer with an awesome website 🐸</td>
     </tr>
   </tbody>
 </table>

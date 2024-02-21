@@ -32,7 +32,7 @@ Hey! You should totally check out those awesome friends!
       <td>Another Mary that is a very talented wizard 💊</td>
     </tr>
     <tr>
-      <td class="friend-name"><a href="https://annsann.eu">Anna</a></td>
+      <td class="friend-name"><a href="https://annsann.eu">Ann</a></td>
       <td>A talented developer with an awesome website 🐸</td>
     </tr>
   </tbody>

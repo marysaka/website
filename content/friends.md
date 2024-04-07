@@ -8,6 +8,10 @@ Hey! You should totally check out those awesome friends!
 <table class="friends">
   <tbody>
     <tr>
+      <td class="friend-name"><a href="https://sludge.network">Sludge</a></td>
+      <td>My beautiful and wonderful wife. They are very talented at reverse engineering and development 🍷</td>
+    </tr>
+    <tr>
       <td class="friend-name"><a href="https://lethalbit.net">Aki</a></td>
       <td>A smart and talented fellow witch that specialize in low-level development ✨</td>
     </tr>
@@ -22,10 +26,6 @@ Hey! You should totally check out those awesome friends!
     <tr>
       <td class="friend-name"><a href="https://github.com/dragonmux">dragonmux</a></td>
       <td>An awesome dragon with incredible knowledge and awesome taste 🐉</td>
-    </tr>
-    <tr>
-      <td class="friend-name"><a href="https://sludge.network">Sludge</a></td>
-      <td>A smart (but also awesome) vampire developer with great taste 🍷</td>
     </tr>
     <tr>
       <td class="friend-name"><a href="https://mary.rs">merry</a></td>

@@ -19,7 +19,7 @@ I also have a [blog](/blog).
 <h2>Where to find me:</h2>
 <ul class="nostyle">
   <li>Twitter: <a href="https://twitter.com/marysaka_">@marysaka_</a></li>
-  <li>Fediverse: <a href="https://outerheaven.club/mary">@mary@outerheaven.club</a></li>
+  <li>Fediverse: <a rel="me" href="https://chaos.social/@mary">@mary@chaos.social</a></li>
   <li>Freedesktop GitLab: <a href="https://gitlab.freedesktop.org/marysaka">marysaka</a></li>
   <li>GitHub: <a href="https://github.com/marysaka">marysaka</a></li>
   <li>Bluesky: @mary.zone</li>
